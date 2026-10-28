@@ -1,0 +1,49 @@
+{
+    bar-sizeing: barber-box;
+
+}
+
+body{
+    font-family: sans-serif;
+    background: black;
+    margin: 38px 16px;
+    color: white;
+    text-align: center;
+}
+
+.profile-card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: wheat;
+    border-radius: 16px;
+    box-shadow: 0 8px 24 px red(15, 38, 71, 0.12);
+}
+
+hi {
+    color: blue;
+    text-align: center;
+}
+
+.profile-card {
+    line-height: 1.8;
+}
+
+.motto {
+    margin-top: 24px;
+    padding: 16px;
+    background: black;
+    border-left: 5px white;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border: 12px;
+    background: red;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+    
