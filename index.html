@@ -1,28 +1,79 @@
 <!DOCTYPE html>
-<HTML lang="th">
-    <head>
-<meta charset="UTF-8">
-<title>My Developer Profile</title>
-<link rel="stylesheet" href="style.css">
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์แนะนำตัวและผลงานของชยพล อุ่นพิชัย">
+    <title>My Developer Portfolio | ชยพล อุ่นพิชัย</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="Profile-card">
-        <p>ชื่อ-นามสกุล: <span id="fullname">ชยพล อุ่นพิชัย</span></p>
-        <p>ชื่อเล่น: <span id="nickname">น้ำปิง</span></p>
-        <p>รหัสประจำตัว: <span id="studentid">68219010027</span></p>
+    <header class="site-header">
+        <nav class="navigation" aria-label="เมนูหลัก">
+            <a class="brand" href="#home">My Portfolio</a>
+            <ul class="navigation-links">
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#skills">ทักษะ</a></li>
+                <li><a href="#projects">ผลงาน</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="motto">
-            <h2>คติประจำใจ</h2>
-            <p id="motto" class="motto">ข้าวมันไก่</p>
-        </div>
+    <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">MY DEVELOPER PORTFOLIO</p>
+                <h1 id="hero-title">สวัสดีครับ ผม<span>ชยพล อุ่นพิชัย</span></h1>
+                <p class="hero-description">
+                    นักเรียนที่สนใจการพัฒนาเว็บไซต์และกำลังเรียนรู้การสร้างประสบการณ์ดิจิทัลที่ดี
+                </p>
+                <a class="button" href="#projects">ดูผลงานของฉัน</a>
+            </div>
+            <img class="profile-image" src="imges/68219010027.jpg" alt="รูปโปรไฟล์ของชยพล อุ่นพิชัย">
+        </section>
 
-        <p>"ข้าวหมูทอดอร่อยมาก"</p>
-        <button id="greetBTN">ครับ</button>
-        <p id="greetBTN">welcome to บ้านกูเอง</p>
-        <img src="image/profile.jpg" ait="รูปโปรไฟล์ของฉัน" class="profile-img">
+        <section class="content-section about-section" id="about" aria-labelledby="about-title">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2 id="about-title">About Me</h2>
+            <p>
+                ผมชื่อ <strong>ชยพล อุ่นพิชัย</strong> ชื่อเล่น <strong>น้ำปิง</strong>
+                รหัสประจำตัว <strong>68219010027</strong> สนใจเรียนรู้การเขียนโปรแกรม
+                และการออกแบบเว็บไซต์ให้ใช้งานง่าย
+            </p>
+            <blockquote>“ข้าวมันไก่”</blockquote>
+        </section>
 
+        <section class="content-section skills-section" id="skills" aria-labelledby="skills-title">
+            <p class="eyebrow">WHAT I'M LEARNING</p>
+            <h2 id="skills-title">Skills</h2>
+            <ul class="skills-list">
+                <li><span class="skill-number">01</span><span>HTML — การสร้างโครงสร้างเว็บไซต์</span></li>
+                <li><span class="skill-number">02</span><span>CSS — การตกแต่งและจัดรูปแบบหน้าเว็บ</span></li>
+                <li><span class="skill-number">03</span><span>JavaScript — พื้นฐานการเพิ่มปฏิสัมพันธ์</span></li>
+            </ul>
+        </section>
 
+        <section class="content-section projects-section" id="projects" aria-labelledby="projects-title">
+            <p class="eyebrow">A SELECTION OF MY WORK</p>
+            <h2 id="projects-title">Projects</h2>
+            <article class="project-card">
+                <p class="project-label">โปรเจกต์แนะนำตัว</p>
+                <h3>My Developer Portfolio</h3>
+                <p>
+                    เว็บไซต์แนะนำตัวที่รวบรวมข้อมูลส่วนตัว ทักษะที่สนใจ และผลงาน
+                    สร้างด้วย HTML และ CSS เพื่อฝึกการจัดโครงสร้างและตกแต่งหน้าเว็บ
+                </p>
+                <div class="project-tags" aria-label="เทคโนโลยีที่ใช้">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </article>
+        </section>
     </main>
-    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <p>© 2026 ชยพล อุ่นพิชัย · สร้างด้วยความตั้งใจ</p>
+        <a href="#home">กลับไปด้านบน ↑</a>
+    </footer>
 </body>
-</HTML>
+</html>
